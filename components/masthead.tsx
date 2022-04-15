@@ -17,6 +17,7 @@ const Masthead: React.FC = () => {
       </video>
       {/* Background Video */}
 
+      {/* Logo */}
       <div className={`flex-grow-0 pt-10 transition-opacity duration-1000`}>
         <Image
           src='/assets/logo.svg'
@@ -25,6 +26,7 @@ const Masthead: React.FC = () => {
           height={114 / 3}
         />
       </div>
+      {/* Logo */}
 
       {/* Text Centered */}
       <div className='p-12 font-bold z-10 text-white drop-shadow-[0_5px_3px_rgba(0,0,0,0.4)] text-center flex-1 flex items-center justify-center flex-col'>
@@ -34,6 +36,17 @@ const Masthead: React.FC = () => {
         </h2>
       </div>
       {/* Text Centered */}
+
+      {/* Arrow to move down */}
+      <div className='flex-grow-0 pb-20 md:pb-10 transition-all duration-1000'>
+        <Image
+          src='/assets/arrow-down.webp'
+          alt='move-down'
+          width={188 / 3}
+          height={105 / 3}
+        />
+      </div>
+      {/* Arrow to move down */}
     </div>
   );
 };
